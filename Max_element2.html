@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the max element in an array</title>
+  </head>
+  <body>
+    <h1 style="font-weight: 500">Finding the maximum element in an array</h1>
+    <script>
+      let arr = [10, 20, 30, 97, 578, -100,108, 346];
+
+      document.write(
+        " The output is being printed on the document itself instead of console.log"
+      );
+      document.write("<br>");
+      document.write("<br>");
+
+      // console.log(typeof arr);
+      document.write(
+        "The arrays behave as objects in the java script" + "<br>" + "<br>"
+      );
+
+      document.write("The array elements are " + "<br>");
+      document.write("<br>");
+
+      for (let index = 0; index < arr.length; index++) {
+        document.write(arr[index]);
+        document.write("<br>");
+      }
+
+      document.write("<br>");
+
+      let max = arr[0];
+      for (let index = 1; index < arr.length; index++) {
+        if (arr[index] > max) {
+          max = arr[index];
+        } 
+      }
+
+      document.write("Maximum element in the array :" + max);
+      console.log("Maximum element in the array :   " + max);
+    </script>
+  </body>
+</html>
